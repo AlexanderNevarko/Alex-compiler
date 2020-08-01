@@ -1,0 +1,41 @@
+start
+
+func main ()
+{
+    var x = 78.09;
+    var y = x + 3 + 4 * 8 - LN (x) * (32 - 32) - 1;
+    var a = 0;
+    var b = x * y;
+
+    input (a);
+
+    while (a < b)
+    {
+        a += 30;
+        b *= 10;
+    }
+
+    if (a > b)
+    {
+        a = b;
+    }
+    else if (b == a)
+        a = 3 + 4;
+    a = b;
+    call Pow (a, b);
+
+    output (b);
+}
+
+func Pow (a, b)
+{
+    var c = a;
+    while (b > 0)
+    {
+        c *= a;
+        b -= 1;
+    }
+    return c;
+}
+
+finish
